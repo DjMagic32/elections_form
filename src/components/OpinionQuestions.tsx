@@ -34,12 +34,12 @@ export function OpinionQuestions() {
     emotions: string[];
   }
 
-  const handleRatingChange = (e) => {
+
+  const handleRatingChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setValue("adminRating", e.target.value); // Update form state with setValue
-    //{...register("electionEmotion")} // Removed duplicated onChange here
   };
 
-  const handleEmotionChange = (e) => {
+  const handleEmotionChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setValue("electionEmotion", e.target.value); // Update form state with setValue
     //{...register("electionEmotion")} // Removed duplicated onChange here
   };
